@@ -1,0 +1,234 @@
+.container {
+  width: 100%;
+
+  header {
+    background: $header-mobile no-repeat center center;
+    background-size: cover;
+    height: 539px;
+
+    .header-flex {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      h1 {
+        text-transform: uppercase;
+        color: $White;
+        margin-top: 2rem;
+        text-align: center;
+        font-weight: 900;
+        letter-spacing: 8px;
+        line-height: 3rem;
+        padding: 23px 1px 0 8px;
+      }
+
+      #arrow {
+        padding-top: 3rem;
+        padding-left: 6px;
+        margin-left: 10.3rem;
+        height: 10rem;
+        width: 2.5rem;
+      }
+    }
+  }
+  .learnMore-template {
+    .learnMore-header-mobile {
+      width: 100%;
+    }
+
+    .learnMore-txt-template {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 4rem 1.3rem;
+      h2 {
+        padding-bottom: 1rem;
+      }
+      p {
+        padding-bottom: 4rem;
+      }
+      .link-template {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        a {
+          z-index: 1;
+          font-family: "Fraunces", serif;
+          text-transform: uppercase;
+        }
+
+        margin-bottom: 3rem;
+
+        .learnMore-underline {
+          width: 8.6rem;
+          height: 11px;
+          border-radius: 6px;
+          position: absolute;
+          margin-left: 6.1rem;
+          margin-top: 12px;
+          transition: 0.5s ease;
+        }
+      }
+    }
+  }
+
+  #transform-underline {
+    background-color: #faf2bf;
+  }
+
+  #transform-container:hover {
+    #transform-underline {
+      background-color: #f7d101;
+    }
+  }
+  #standOut-container:hover {
+    #standOut-underline {
+      background-color: #fd746b;
+    }
+  }
+  #standOut-underline {
+    background-color: #fed9cf;
+  }
+
+  .graphicDesign-container {
+    background: $graphic-design-mobile no-repeat center center;
+    background-size: cover;
+  }
+
+  .photography-container {
+    background: $photography-mobile no-repeat center center;
+    background-size: cover;
+  }
+
+  .poster-template {
+    height: 602px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+    padding: 3rem 12px;
+    .poster-title {
+      font-size: 1.8rem;
+    }
+    .poster-title,
+    .poster-description {
+      color: $Very-dark-desaturated-blue;
+      opacity: 75%;
+    }
+    .poster-title {
+      padding-bottom: 1.8rem;
+    }
+    .poster-description {
+      font-size: 1rem;
+    }
+  }
+
+  .testimonials-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .testimonial-title {
+      font-family: "Fraunces", serif;
+      color: $Grayish-blue;
+      text-transform: uppercase;
+      font-size: 15px;
+      letter-spacing: 5px;
+      padding-top: 4.1rem;
+    }
+    .client-container {
+      padding: 4.2rem 1.6rem 0;
+      .client-template {
+        .testimonial-img {
+          border-radius: 5rem;
+          height: 4.6rem;
+          margin-bottom: 1.9rem;
+        }
+        .testimonial-description {
+          color: $Very-dark-grayish-blue;
+          padding-bottom: 2.1rem;
+        }
+        .testimonial-name {
+          font-family: "Fraunces", serif;
+          font-size: 18px;
+          padding-bottom: 12px;
+          color: $Very-dark-desaturated-blue;
+        }
+        .testimonial-job {
+          color: $Grayish-blue;
+          font-size: 14px;
+          padding-bottom: 4rem;
+          margin-bottom: 3px;
+        }
+      }
+    }
+  }
+
+  .collage-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    .collage-img {
+      width: 100%;
+      height: 188px;
+      background-position: center;
+      background-size: cover;
+    }
+
+    #milk {
+      background-image: url(images/mobile/image-gallery-milkbottles.jpg);
+    }
+
+    #orange {
+      background-image: url(images/mobile/image-gallery-orange.jpg);
+    }
+
+    #cone {
+      background-image: url(images/mobile/image-gallery-cone.jpg);
+    }
+
+    #sugar {
+      background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
+    }
+  }
+
+  footer {
+    background-color: #90d4c5;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 22rem;
+    padding-bottom: 3rem;
+
+    #logo-footer {
+      color: #2b7463;
+      width: 50%;
+      margin: auto;
+      font-family: "Lato", sans-serif;
+      font-size: 2rem;
+      margin-bottom: 5px;
+      padding-top: 1rem;
+      margin-top: 2.7rem;
+    }
+    a {
+      color: #38917c;
+    }
+    .link-list {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      padding: 2.5rem 2rem 3.5rem;
+    }
+
+    .social-media-list {
+      display: flex;
+      list-style-type: none;
+      justify-content: center;
+      li {
+        padding: 2rem 1rem;
+      }
+    }
+  }
+}

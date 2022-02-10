@@ -1,0 +1,28 @@
+//colors
+$Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$Very-dark-grayish-blue: hsl(213, 9%, 39%);
+$Dark-grayish-blue: hsl(232, 10%, 55%);
+$Grayish-blue: hsl(210, 4%, 67%);
+$White: hsl(0, 0%, 100%);
+//font
+$body-font: font-size("18px");
+//Section Backgrounds
+$header-mobile: url("images/mobile/image-header.jpg");
+$header-desktop: url("images/desktop/image-header.jpg");
+$graphic-design-mobile: url("images/mobile/image-graphic-design.jpg");
+$graphic-design-desktop: url("images/desktop/image-graphic-design.jpg");
+$photography-mobile: url("images/mobile/image-photography.jpg");
+$photography-desktop: url("images/desktop/image-photography.jpg");
+
+//social media
+$facebook: url("images/icon-facebook.svg");
+$instagram: url("images/icon-instagram.svg");
+$twitter: url("images/icon-twitter.svg");
+$pinterest: url("images/icon-pinterest.svg");
+
+@import "main";
+@import "global";
+@import "media1440";
+@import "nav";
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;1,400&family=Fraunces:wght@700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");

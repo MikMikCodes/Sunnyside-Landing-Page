@@ -1,0 +1,180 @@
+@media screen and (max-width: 375px) {
+  .topNav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1.4rem;
+
+    #hamburger {
+      cursor: pointer;
+    }
+
+    #hamburger:hover {
+      transform: scale(1.1);
+      opacity: 0.5;
+    }
+
+    .logo {
+      margin-left: 3px;
+    }
+
+    #hamburger {
+      height: 18px;
+      margin-top: 3px;
+      transition: all 0.4s ease;
+    }
+
+    .show-menu {
+      display: block;
+    }
+    .hide-menu {
+      display: none;
+    }
+
+    #menu-container {
+      position: absolute;
+      top: 6.5rem;
+      padding-right: 18px;
+      width: 21.7rem;
+
+      #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: $White;
+        height: 19.1rem;
+        padding-left: 7px;
+        gap: 14px;
+
+        .triangle {
+          width: 0;
+          height: 0;
+          border-bottom: 2.5rem solid $White;
+          border-left: 2.5rem solid transparent;
+          z-index: 1;
+          position: absolute;
+          top: -24px;
+          left: 18.1rem;
+          display: flex;
+        }
+        ul {
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          gap: 9px;
+          text-align: center;
+          padding-top: 29px;
+
+          li {
+            a {
+              font-size: 1.2rem;
+              color: $Dark-grayish-blue;
+              line-height: 3rem;
+            }
+          }
+        }
+        .contact-btn {
+          background-color: #fdd700;
+          border-radius: 28px;
+          display: inline-block;
+          cursor: pointer;
+          color: #000000;
+          font-family: Georgia;
+          font-size: 14px;
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          padding: 19px 30px;
+          text-decoration: none;
+          text-shadow: 0px 1px 0px #2f6627;
+          margin-top: 6px;
+          margin-right: 9px;
+          transition: 0.5s ease;
+        }
+        .contact-btn:hover {
+          background-color: #64cbff;
+
+          transform: scale(1.1);
+        }
+        .contact-btn:active {
+          position: relative;
+          top: 1px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .topNav {
+    #hamburger {
+      display: none;
+    }
+
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2rem;
+
+    .logo {
+      height: 2rem;
+      width: 10.7rem;
+      margin: 2.9rem 2.4rem;
+    }
+
+    #menu-container {
+      display: flex;
+      flex-direction: row;
+      padding: 3.3rem 3rem 0 2.5rem;
+
+      .hide-menu {
+        display: none;
+      }
+
+      #menu {
+        display: flex;
+        gap: 2.8rem;
+        ul {
+          display: flex;
+          list-style-type: none;
+          gap: 3.1rem;
+
+          a {
+            color: $White;
+          }
+        }
+
+        .contact-btn {
+          font-size: 15px;
+          text-transform: uppercase;
+          font-family: "Fraunces", serif;
+          background-color: #fdd700;
+          border-radius: 28px;
+          display: inline-block;
+          cursor: pointer;
+          color: #000000;
+          font-size: 14px;
+          letter-spacing: 1px;
+          padding: 18px 29px 0;
+          text-decoration: none;
+          text-shadow: 0px 1px 0px #2f6627;
+          position: relative;
+          top: -20px;
+          height: 3.5rem;
+          transition: 0.5s ease;
+        }
+
+        .contact-btn:hover {
+          background-color: #6eceff;
+          color: $White;
+          transform: scale(1.1);
+        }
+        .contact-btn:active {
+          position: relative;
+          top: 1px;
+        }
+      }
+    }
+  }
+}

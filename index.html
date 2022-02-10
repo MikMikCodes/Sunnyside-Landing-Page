@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sunnyside Landing Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="topNav">
+          <img src="images/logo.svg" alt="logo-icon" class="logo" />
+          <div class="hide-menu" id="menu-container">
+            <div id="menu">
+              <div class="triangle"></div>
+
+              <ul>
+                <li>
+                  <a href="#">About</a>
+                </li>
+
+                <li>
+                  <a href="#">Services</a>
+                </li>
+
+                <li>
+                  <a href="#">Projects</a>
+                </li>
+              </ul>
+              <div class="contact-btn">Contact</div>
+            </div>
+          </div>
+          <img
+            src="images/icon-hamburger.svg"
+            alt="hamburger-menu-icon"
+            id="hamburger"
+            onclick="peekaMenu()"
+          />
+        </nav>
+
+        <div class="header-flex">
+          <h1>We are creatives</h1>
+          <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" id="arrow" />
+        </div>
+      </header>
+      <section class="learnMore-template" id="transform-section">
+        <div id="transform-img-container">
+          <img
+            src="images/mobile/image-transform.jpg"
+            alt="transform-header"
+            class="learnMore-header-mobile"
+          />
+        </div>
+        <div class="learnMore-txt-template" id="transform-txt">
+          <h2>Transform your brand</h2>
+          <p>
+            We are a full-service creative agency specializing in helping brands grow fast. Engage
+            your clients through compelling visuals that do most of the marketing for you.
+          </p>
+          <div class="link-template" id="transform-container">
+            <a href="#">Learn More</a>
+            <div class="learnMore-underline" id="transform-underline"></div>
+          </div>
+        </div>
+      </section>
+      <section class="learnMore-template" id="standOut-section">
+        <img
+          src="images/mobile/image-stand-out.jpg"
+          alt="stand-out-header"
+          class="learnMore-header-mobile"
+        />
+
+        <div class="learnMore-txt-template" id="standOut-txt">
+          <h2>Stand out to the right audience</h2>
+          <p>
+            Using a collaborative formula of designers, researchers, photographers, videographers,
+            and copywriters, we'll build and extend your brand in digital places.
+          </p>
+          <div class="link-template" id="standOut-container">
+            <a href="#">Learn More</a>
+            <div class="learnMore-underline" id="standOut-underline"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="desktopDesign-grid">
+        <section class="graphicDesign-container">
+          <div class="poster-template">
+            <h3 id="graphic-title" class="poster-title">Graphic Design</h3>
+            <p class="poster-description">
+              Great design makes you memorable. We deliver artwork that underscores your brand
+              message and captures potential clients' attention.
+            </p>
+          </div>
+        </section>
+
+        <section class="photography-container">
+          <div class="poster-template">
+            <h3 id="photo-title" class="poster-title">Photography</h3>
+            <p class="poster-description">
+              Increase your credibility by getting the most stunning, high-quality photos that
+              improve your business image.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <section class="testimonials-container">
+        <h3 class="testimonial-title">Client Testimonials</h3>
+        <div class="client-container">
+          <div class="client-template">
+            <img src="images/image-emily.jpg" alt="emily-icon" id="emily" class="testimonial-img" />
+            <p class="testimonial-description">
+              We put our trust in Sunnyside and they delivered, making sure our needs were met and
+              deadlines were always hit.
+            </p>
+            <h4 class="testimonial-name">Emily R.</h4>
+            <h5 class="testimonial-job">Marketing Director</h5>
+          </div>
+          <div class="client-template">
+            <img
+              src="images/image-thomas.jpg"
+              alt="thomas-icon"
+              id="thomas"
+              class="testimonial-img"
+            />
+            <p class="testimonial-description">
+              Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it
+              a satisfying and enjoyable experience.
+            </p>
+            <h4 class="testimonial-name">Thomas S.</h4>
+            <h5 class="testimonial-job">Chief Operating Officer</h5>
+          </div>
+          <div class="client-template">
+            <img
+              src="images/image-jennie.jpg"
+              alt="jennie-icon"
+              id="jennie"
+              class="testimonial-img"
+            />
+            <p class="testimonial-description">
+              Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
+              Highly recommended!
+            </p>
+            <h4 class="testimonial-name">Jennie F.</h4>
+            <h5 class="testimonial-job">Business Owner</h5>
+          </div>
+        </div>
+      </section>
+      <!-- section: photocollage -->
+      <section class="collage-container">
+        <div class="collage-img" id="milk"></div>
+        <div class="collage-img" id="orange"></div>
+        <div class="collage-img" id="cone"></div>
+        <div class="collage-img" id="sugar"></div>
+      </section>
+
+      <footer>
+        <h1 id="logo-footer">sunnyside</h1>
+        <nav>
+          <ul class="link-list">
+            <li><a class="footer-links" href="#">About</a></li>
+            <li><a class="footer-links" href="#">Services</a></li>
+            <li><a class="footer-links" href="#">Projects</a></li>
+          </ul>
+
+          <ul class="social-media-list">
+            <li>
+              <a href="#"><img src="images/icon-facebook.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/icon-instagram.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/icon-twitter.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/icon-pinterest.svg" alt="" /></a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

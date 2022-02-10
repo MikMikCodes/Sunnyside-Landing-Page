@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Fraunces", serif;
+  }
+
+  h2,
+  a {
+    color: $Very-dark-desaturated-blue;
+  }
+  h2 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+  p {
+    font-size: 18px;
+    color: $Dark-grayish-blue;
+    line-height: 1.9rem;
+  }
+  a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+}

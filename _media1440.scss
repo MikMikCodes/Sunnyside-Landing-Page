@@ -1,0 +1,200 @@
+@media screen and (min-width: 1440px) {
+  .container {
+    header {
+      background: $header-desktop no-repeat center center;
+      background-size: cover;
+      height: 50rem;
+      .header-flex {
+        display: block;
+        text-align: center;
+        h1 {
+          font-size: 3.6rem;
+          margin: 0;
+          padding: 3rem 0;
+        }
+        #arrow {
+          margin: 0;
+          margin-top: 7px;
+          margin-right: 1rem;
+          height: 162px;
+        }
+      }
+    }
+    .learnMore-template {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      height: 601px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        height: 602px;
+      }
+
+      .learnMore-txt-template {
+        padding: 9.9rem 8.5rem 0;
+
+        text-align: start;
+
+        h2 {
+          font-size: 2.5rem;
+          line-height: 3rem;
+          margin-bottom: 16px;
+        }
+
+        p {
+          padding-bottom: 43px;
+        }
+      }
+      #standOut-underline,
+      #transform-underline {
+        margin-left: 0;
+        transition: 0.5s ease;
+      }
+
+      #standOut-underline {
+        right: 28.3rem;
+      }
+      #transform-underline {
+        left: 8rem;
+      }
+    }
+
+    #transform-img-container {
+      grid-column: 2;
+      height: 600px;
+    }
+    #transform-txt {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .standOut-section {
+      margin-top: 4px;
+    }
+
+    .desktopDesign-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      .poster-template {
+        padding-bottom: 5rem;
+        padding: 3.8rem 12rem;
+
+        .poster-title {
+          padding-bottom: 1.5rem;
+        }
+
+        .poster-description {
+          line-height: 1.7rem;
+        }
+      }
+      .graphicDesign-container {
+        background: $graphic-design-desktop no-repeat center;
+      }
+      .photography-container {
+        background: $photography-desktop no-repeat center;
+      }
+    }
+    .testimonials-container {
+      height: 48.5rem;
+      padding-top: 5.8rem;
+      padding-right: 4px;
+
+      .testimonial-title {
+        font-size: 1.2rem;
+        letter-spacing: 6px;
+        padding-right: 1px;
+      }
+      .client-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1.8rem;
+        padding: 4.1rem 1.7rem;
+
+        .client-template {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: stretch;
+          width: 25.5%;
+          padding: 1rem 0;
+
+          .testimonial-img {
+            margin-bottom: 3.7rem;
+            width: 4.5rem;
+          }
+
+          .testimonial-description {
+            padding-top: 2px;
+            margin-bottom: 2.3rem;
+            color: $Dark-grayish-blue;
+          }
+
+          .testimonial-name {
+            padding-right: 11px;
+          }
+
+          .testimonial-job {
+            padding-right: 11px;
+          }
+        }
+      }
+    }
+
+    .collage-container {
+      display: flex;
+      .collage-img {
+        height: 28rem;
+      }
+
+      #milk {
+        background-image: url(images/desktop/image-gallery-milkbottles.jpg);
+      }
+
+      #orange {
+        background-image: url(images/desktop/image-gallery-orange.jpg);
+      }
+
+      #cone {
+        background-image: url(images/desktop/image-gallery-cone.jpg);
+      }
+
+      #sugar {
+        background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
+      }
+    }
+    footer {
+      #logo-footer {
+        font-size: 2.2rem;
+        padding-top: 1.2rem;
+        margin-bottom: 1.5rem;
+        padding-right: 15px;
+        letter-spacing: 1px;
+      }
+
+      .link-list {
+        padding: 20px 35rem;
+        margin-bottom: 8px;
+
+        a {
+          padding: 2rem 1rem;
+        }
+      }
+
+      .social-media-list {
+        padding-top: 2rem;
+        padding-left: 10px;
+        padding-right: 18px;
+        li {
+          padding-right: 11px;
+        }
+      }
+    }
+  }
+}
